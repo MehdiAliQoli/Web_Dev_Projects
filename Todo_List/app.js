@@ -9,12 +9,21 @@ add.onclick = () => {
 
   input.type = "checkbox";
   but1.innerHTML = "delete";
-  span.textContent = text.value; // text inside span
-
-  list.appendChild(input); // 1. checkbox
-  list.appendChild(span);  // 2. text
-  list.appendChild(but1);  // 3. delete button
+  but1.className = "del_but";
+  span.textContent = text.value;
+if(text.value !=''){
+ list.appendChild(input); 
+  list.appendChild(span);  
+  list.appendChild(but1);  
   item.appendChild(list);
+}
+ 
 
   text.value = "";
 }
+
+item.addEventListener("click" , (e) =>{
+   if (e.target.classList.contains("del_but")) {
+    e.target.closest("li").remove(); 
+  }
+})
