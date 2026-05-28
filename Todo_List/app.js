@@ -19,7 +19,7 @@ if(text.value !=''){
 }
  
 
-  text.value = "";
+  text.value = "";t55t
 }
 
 item.addEventListener("click" , (e) =>{
