@@ -1,58 +1,18 @@
-body{
-  
-}
-#screen {
-    width: 300px;
-    background: #333;
-    color: white;
-    text-align: right;
-    padding: 20px;
-    font-size: 28px;
-    border-radius: 10px;
-    margin-bottom: 10px;
-    display: flex;
-    align-items: center;
-}
+/* Minimal styles for the Pokemon.fetch demo */
+*{box-sizing:border-box}
+html,body{height:100%}
+body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;background:#f7f9fc;color:#0f1720;padding:2rem}
 
-#main {
-    display: flex;
-    align-items: center;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 10px;
-    width: 300px;
-    padding: 20px;
-    background: #222;
-    border-radius: 16px;
-}
+#input_txt{padding:.5rem .75rem;border:1px solid #d6dde6;border-radius:8px;margin-bottom:.75rem;width:220px;max-width:90%}
 
-.but , .but_op {
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 20px;
-    font-size: 18px;
-    border-radius: 10px;
-    background-color: #b4f07b;
-    transition: all 0.15s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
+#Poki{display:block;margin:1rem auto;max-width:280px;height:auto;border-radius:10px;box-shadow:0 8px 24px rgba(2,6,23,.06);background:#fff;padding:.5rem}
 
-.but:hover , .but_op:hover{
-    background-color: #e0e0e0;
-    transform: scale(1.05);
-}
+#see_but{padding:.5rem .9rem;background:#0ea5e9;color:#fff;border:none;border-radius:8px;cursor:pointer;font-weight:600}
+#see_but:hover{background:#0891c2}
 
-.but:active , .but_op:active {
-    transform: scale(0.95);
-    background-color: #bdbdbd;
-}
+input:focus,button:focus{outline:3px solid rgba(14,165,233,.18);outline-offset:2px}
 
-.op {
-    background-color: #ff9500;
-    color: white;
-}
-
-.zero {
-    grid-column: span 2;
+@media (max-width:420px){
+	body{padding:1rem}
+	#Poki{max-width:220px}
 }
